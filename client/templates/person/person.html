@@ -1,0 +1,11 @@
+<template name="Person">
+	{{> quickForm 
+	collection="Persons"
+	id="insertPersonForm"
+	doc="this"
+	type="method" 
+	meteormethod="submitPerson" 
+	omitFields="author, createdAt, interaction, status, indicator"}}
+
+
+</template>

@@ -1,0 +1,5 @@
+<template name="personEdit">
+  <h3>{{firstname}} {{name}}</h3>
+  {{> quickForm collection="Persons" doc=this id="personSubmit" type="update"  omitFields="firstname, name, author, createdAt" template="bootstrap3-horizontal" label-class="col-sm-2" input-col-class="col-sm-10"}}
+  {{#quickRemoveButton collection="Persons" _id=this._id}}Verwijder{{/quickRemoveButton}}
+</template>

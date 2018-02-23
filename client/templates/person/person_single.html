@@ -1,0 +1,14 @@
+<template name="personSingle">
+	<div class="person-single page">
+			<div class="person">
+		<div class="person-content">
+			<h3>{{firstname}} {{name}}</h3>
+				<ul>
+			{{> interaction}}
+			</ul>
+		</div>
+		<a class="discuss btn btn-default" href="{{pathFor 'personEdit'}}">Begeleiding</a> 
+		{{#quickRemoveButton collection="Persons" _id=this._id}}Verwijder{{/quickRemoveButton}}
+	</div>
+	</div>
+</template>

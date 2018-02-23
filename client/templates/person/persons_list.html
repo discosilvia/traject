@@ -1,0 +1,13 @@
+<template name="personsList">
+	<div class="persons">
+		{{#each persons}}
+		<div class="person">
+		<div class="person-content">
+			<h3><a href="{{pathFor 'personSingle'}}">{{firstname}} {{name}}</a></h3>
+				</div>
+		<a href="{{pathFor 'personSingle'}}" class="discuss btn btn-default">Open</a> 
+	</div>
+		{{/each}}
+	</div>
+
+</template>
