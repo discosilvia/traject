@@ -3,3 +3,4 @@ import { ReactiveVar } from 'meteor/reactive-var';
 
 
 Meteor.subscribe('personsallowed');
+

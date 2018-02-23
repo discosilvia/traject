@@ -1,0 +1,14 @@
+<template name="searchBox">
+    {{> EasySearch.Input index=personsIndex }}
+
+    <ul>
+        {{#EasySearch.Each index=personsIndex }}
+        <li>
+            <h3><a href="{{pathFor 'personSingle'}}">{{firstname}} {{name}}</a></h3>
+            <a href="{{pathFor 'personEdit'}}" class="discuss btn btn-default">Open</a>
+        </li>
+        {{/EasySearch.Each}}
+    </ul>
+</template>
+
+
