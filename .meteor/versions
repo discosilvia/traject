@@ -30,6 +30,7 @@ deps@1.0.12
 diff-sequence@1.1.0
 dynamic-import@0.3.0
 easy:search@2.2.1
+easysearch:autosuggest@2.2.1
 easysearch:components@2.2.1
 easysearch:core@2.2.0
 ecmascript@0.10.4
@@ -38,6 +39,7 @@ ecmascript-runtime-client@0.6.2
 ecmascript-runtime-server@0.5.0
 ejson@1.1.0
 email@1.2.3
+erasaur:meteor-lodash@4.0.0
 es5-shim@4.7.3
 geojson-utils@1.0.10
 hot-code-push@1.0.4
@@ -53,6 +55,7 @@ iron:location@1.0.11
 iron:middleware-stack@1.1.0
 iron:router@1.1.2
 iron:url@1.1.0
+jeremy:selectize@0.12.1_5
 jquery@1.11.11
 launch-screen@1.1.1
 less@2.7.12

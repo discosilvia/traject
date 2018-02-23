@@ -1,0 +1,16 @@
+<template name="indicatorSearch">
+   <p>indicatorSearch</p>
+    {{> EasySearch.Input index=indicatorIndex }}
+
+        {{#EasySearch.Each index=indicatorIndex }}
+            <h3><a href="{{pathFor 'personSingle'}}">
+            	{{firstname }} {{name}}</a></h3>
+		<ul>{{#each indicator}}
+		<li>{{type}} : {{content}}</li>
+		{{/each}}
+		</ul>
+
+        
+        {{/EasySearch.Each}}
+  
+</template>
