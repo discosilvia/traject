@@ -2,13 +2,13 @@
 	<div class="person-single page">
 			<div class="person">
 		<div class="person-content">
-			<h3>{{firstname}} {{name}}</h3>
+			<h1>{{firstname}} {{name}}</h1>
+		<a class="discuss btn btn-default" href="{{pathFor 'personEdit'}}">Open</a> 
 				<ul>
 			{{> interaction}}
 			</ul>
+		{{#quickRemoveButton collection="Persons" _id=this._id}}Verwijder deze cursist{{/quickRemoveButton}}
 		</div>
-		<a class="discuss btn btn-default" href="{{pathFor 'personEdit'}}">Begeleiding</a> 
-		{{#quickRemoveButton collection="Persons" _id=this._id}}Verwijder{{/quickRemoveButton}}
 	</div>
 	</div>
 </template>

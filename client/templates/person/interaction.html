@@ -1,5 +1,14 @@
 <template name="interaction">
-		{{#each interaction}}
-		<li>{{type}}: {{content}}</li>
+		<h2>Interactions</h2>
+		<ul>{{#each interaction}}
+		<li>{{type}} / {{partner}}: {{content}}</li>
 		{{/each}}
+		</ul>
+
+		<h2>Indicators</h2>
+		<ul>{{#each indicator}}
+		<li>{{type}} : {{content}}</li>
+		{{/each}}
+		</ul>
+
 </template>
