@@ -1,11 +1,10 @@
 <template name="personEdit">
   <h1>{{firstname}} {{name}}</h1>
   {{> quickForm 
-  collection="Persons" 
-  doc=this id="updatePersonsForm" 
-  type="update" 
-  omitFields="name, firstname, status, createdAt, author"
-	template="bootstrap3-inline" label-class="sr-only" afFieldInput-placeholder="schemaLabel"
+  	collection="Persons" 
+  	doc=this id="updatePersonsForm" 
+  	type="update"
+  	omitFields="name, firstname, status, createdAt, author"
 	}}
 </template>
 

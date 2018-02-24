@@ -1,14 +1,43 @@
 <template name="interaction">
 		<h2>Interactions</h2>
-		<ul>{{#each interaction}}
-		<li>{{type}} / {{partner}}: {{content}}</li>
+		<table class="interaction-table table-hover table-bordered">
+		<thead>
+		<tr>
+			<th>OK?</th>
+			<th>Type</th>
+			<th>Date</th>
+			<th>Content</th>
+		</tr>
+		</thead>
+		<tbody>
+			{{#each interaction}}
+		<tr>
+			<td>{{ok}}</td>
+			<td>{{type}}: {{partner}} </td>
+			<td>{{date}}</td>
+			<td>{{content}}</td>
+		</tr>
 		{{/each}}
-		</ul>
+		</tbody>	
+		</table>
 
 		<h2>Indicators</h2>
-		<ul>{{#each indicator}}
-		<li>{{type}} : {{content}}</li>
-		{{/each}}
-		</ul>
+		<table class="indicator-table table-hover table-bordered">
+		<thead>
+		<tr>
+			<th>Indicator</th>
+			<th>Content</th>
+		</tr>
+		</thead>
+		<tbody>
+			{{#each indicator}}
+		<tr>
+			<td>{{type}}</td>
+			<td>{{content}}</td>
+		</tr>
+			{{/each}}
+		</tbody>
+		</table>
 
+		
 </template>
